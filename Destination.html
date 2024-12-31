@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        
+header{
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h3{
+    text-align: center;
+}
+.voyage img{
+    width: 300px;
+    height: 250px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.nav_links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav_links li{
+    margin: 0 10px;
+}
+.nav_links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.nav_links a.active{
+    color: orangered;
+    font-weight: bold;
+    border-bottom: 2px solid orangered;
+}
+.nav_links a:hover{
+    color: #ff4500;
+}
+.directions{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.voyage {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+}
+.voyage img {
+    max-width: 100%;
+    border-radius: 8px;
+    /* aspect-ratio: 16/9*/
+}
+.voyage h3{
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+.voyage a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s ease
+}
+.voyage a:hover{
+    color: #0056b3;
+}
+.voyage:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+footer{
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+     
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>ExploreWorld</h2>
+        <nav class="navbar">
+            <ul class="nav_links">
+                <li><a href="page.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+                <li><a href="Destination.html">Destination</a></li>
+                <li><a href="propos.html">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>Destinations de Réve</h3>
+        <section class="directions">
+            <div class="voyage">
+                <img src="./0619-0941_bali.jpg" alt="bali">
+                <h3>Bali , Indonisia</h3>
+                <p>Plage paradisiaques et temples magnifiques vous attendent</p>
+            </div>
+            <div class="voyage">
+                <img src="./marquee-travel-paris-800x450.jpg" alt="paris">
+                <h3>Paris , France</h3>
+                <p>Découvrez la ville lumiére et ses monuments emblématiques</p>
+            </div>
+            <div class="voyage">
+                <img src="./tokyo.webp" alt="tokyo">
+                <h3>Tokyo, Japon</h3>
+                <p>Une ville ou tradition et modernité se rencontrent</p>
+            </div>
+            <div class="voyage">
+                <img src="./usa.jpg" alt="usa">
+                <h3>New York , Etats-Unis</h3>
+                <p>La ville qui ne dont jamais,avec ses gralle-cielle et ses parcs</p>
+            </div>
+            <div class="voyage">
+                <img src="./sydney_opera-unsplash.jpg" alt="sydney">
+                <h3>sydney, Australie</h3>
+                <p>Un mélange de plages de culture et d'adventure en plein air</p>
+            </div>  
+        </section>
+    </main>
+    <footer>&copy;2024 ExploreWorld Tous droits réservés</footer>
+    
+</body>
+</html>
